@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSSelection"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:controls="clr-namespace:RSXamarinFormsControls.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <controls:RSScrollViewBarHide x:Name="RootContent" VerticalOptions="Fill">
+            <StackLayout x:Name="stkContent">
+                <controls:RSToggle
+                    x:Name="tglAllTag"
+                    IsActive="True"
+                    Text="Tümü" />
+            </StackLayout>
+        </controls:RSScrollViewBarHide>
+    </ContentView.Content>
+</ContentView>

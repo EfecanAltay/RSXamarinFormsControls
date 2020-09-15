@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSLabelPicker"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:effect="clr-namespace:RSXamarinFormsControls.Effects"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:RSXamarinFormsControls.Controls"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Fill">
+            <Frame
+                Padding="5"
+                BackgroundColor="{StaticResource Background}"
+                BorderColor="{StaticResource PrimaryColor}"
+                HeightRequest="44"
+                VerticalOptions="Fill">
+                <StackLayout
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    Spacing="0">
+                    <Label
+                        x:Name="labPaidQtyMinus"
+                        Margin="3,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="28"
+                        HorizontalTextAlignment="Center"
+                        Text="-"
+                        TextColor="{StaticResource PrimaryColor}"
+                        WidthRequest="34">
+                        <Label.Effects>
+                            <effect:RSTouchEffect
+                                LongTouchAction="TouchEffect_Minus_LongTouchAction"
+                                ReleasedTouchAction="TouchEffect_Minus_ReleasedTouchAction"
+                                TouchAction="TouchEffect_Minus_TouchAction" />
+                        </Label.Effects>
+                    </Label>
+                    <AbsoluteLayout>
+                        <controls:RSEntry
+                            x:Name="entry"
+                            AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                            FontAttributes="Bold"
+                            FontSize="22"
+                            HorizontalTextAlignment="Center"
+                            TextColor="{StaticResource TextColor}"
+                            BackgroundColor="{StaticResource BackgroundDark}"
+                            VerticalOptions="Center">
+                            <controls:RSEntry.HeightRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="UWP">40</On>
+                                    <On Platform="iOS">50</On>
+                                    <On Platform="Android">50</On>
+                                </OnPlatform>
+                            </controls:RSEntry.HeightRequest>
+                            <controls:RSEntry.WidthRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="UWP">65</On>
+                                    <On Platform="iOS">65</On>
+                                    <On Platform="Android">65</On>
+                                </OnPlatform>
+                            </controls:RSEntry.WidthRequest>
+                        </controls:RSEntry>
+                    </AbsoluteLayout>
+                    <Label
+                        x:Name="labPaidQtyPlus"
+                        Margin="3,0,0,0"
+                        FontAttributes="Bold"
+                        FontSize="28"
+                        HorizontalTextAlignment="Center"
+                        Text="+"
+                        TextColor="{StaticResource PrimaryColor}"
+                        WidthRequest="34">
+                        <Label.Effects>
+                            <effect:RSTouchEffect
+                                LongTouchAction="TouchEffect_Plus_LongTouchAction"
+                                ReleasedTouchAction="TouchEffect_Plus_ReleasedTouchAction"
+                                TouchAction="TouchEffect_Plus_TouchAction" />
+                        </Label.Effects>
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

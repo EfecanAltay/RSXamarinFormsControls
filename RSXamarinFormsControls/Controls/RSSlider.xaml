@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSSlider"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout Margin="10,0,10,0" VerticalOptions="Center">
+            <Slider
+                x:Name="mySlider"
+                HorizontalOptions="FillAndExpand"
+                Maximum="10000"
+                Minimum="100"
+                ValueChanged="Slider_ValueChanged">
+                <Slider.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="iOS" Value="10,0" />
+                    </OnPlatform>
+                </Slider.Margin>
+            </Slider>
+            <Grid
+                x:Name="infoText"
+                Margin="0,-5,0,0"
+                HeightRequest="30"
+                WidthRequest="80">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70" />
+                </Grid.ColumnDefinitions>
+                <Frame
+                    Padding="3,3,3,3"
+                    BackgroundColor="#E8E8E8"
+                    CornerRadius="10"
+                    HasShadow="False">
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label
+                            x:Name="lblText"
+                            FontSize="18"
+                            HorizontalOptions="FillAndExpand"
+                            HorizontalTextAlignment="Center"
+                            Text="0"
+                            TextColor="#5c6f75"
+                            VerticalOptions="FillAndExpand"
+                            VerticalTextAlignment="Center">
+                            <Label.Margin>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <On Platform="iOS" Value="15,0" />
+                                    <On Platform="Android" Value="10,0" />
+                                </OnPlatform>
+                            </Label.Margin>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSToggle"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:common="clr-namespace:RSXamarinFormsControls.Common"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout
+            HorizontalOptions="Fill"
+            MinimumHeightRequest="30"
+            MinimumWidthRequest="30"
+            Orientation="Horizontal">
+            <Frame
+                Padding="4"
+                BackgroundColor="{StaticResource Background}"
+                BorderColor="{StaticResource BackgroundDark}"
+                HasShadow="False"
+                HeightRequest="25"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="25">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="CheckFrame_Tapped" />
+                </Frame.GestureRecognizers>
+                <Label
+                    x:Name="tickIcon"
+                    HorizontalOptions="Center"
+                    IsVisible="False"
+                    FontSize="24"
+                    Text="{x:Static common:IconFont.Done}"
+                    TextColor="{StaticResource PrimaryColor}"
+                    FontFamily="MaterialIcons"
+                    VerticalOptions="Center" />
+            </Frame>
+            <Label
+                x:Name="lblText"
+                FontSize="17"
+                Text="?"
+                TextColor="{StaticResource TextColor}"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

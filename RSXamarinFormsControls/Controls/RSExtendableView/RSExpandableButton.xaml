@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSExpandableButton"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:common="clr-namespace:RSXamarinFormsControls.Common"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout
+            x:Name="RootContent"
+            HorizontalOptions="FillAndExpand"
+            MinimumHeightRequest="40"
+            MinimumWidthRequest="40">
+            <Label
+                x:Name="expandableImage"
+                FontSize="24"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                FontFamily="MaterialIcons"
+                Text="{x:Static common:IconFont.ArrowDropDown}"
+                TextColor="{StaticResource PrimaryColor}"
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

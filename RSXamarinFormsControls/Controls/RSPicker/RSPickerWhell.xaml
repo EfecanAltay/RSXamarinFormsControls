@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSPickerWhell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentView.Content>
+        <StackLayout HeightRequest="110" HorizontalOptions="Center">
+            <Frame Padding="0">
+                <Grid
+                    Margin="0,5"
+                    HorizontalOptions="Center"
+                    RowSpacing="0"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="60">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                    <ScrollView
+                        x:Name="scrollView"
+                        Grid.RowSpan="3"
+                        Scrolled="ScrollView_Scrolled"
+                        VerticalScrollBarVisibility="Never">
+                        <StackLayout
+                            x:Name="Content"
+                            HorizontalOptions="FillAndExpand"
+                            Spacing="0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </ScrollView>
+                    <BoxView
+                        Grid.Row="1"
+                        BackgroundColor="{StaticResource PrimaryColor}"
+                        InputTransparent="True"
+                        IsVisible="false"
+                        Opacity=".1" />
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

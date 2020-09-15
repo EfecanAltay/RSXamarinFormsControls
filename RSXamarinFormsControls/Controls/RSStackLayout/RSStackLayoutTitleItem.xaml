@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSStackLayoutTitleItem"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <Grid x:Name="contentRoot" BackgroundColor="#00FF0000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="73" />
+                <RowDefinition Height="1" />
+            </Grid.RowDefinitions>
+
+            <!--  Title Text  -->
+            <Label
+                x:Name="title"
+                Grid.ColumnSpan="2"
+                Margin="20,0,0,0"
+                FontAttributes="Bold"
+                FontSize="18"
+                TextColor="{StaticResource TextColor}"
+                VerticalOptions="Center" />
+
+            <!--  LineBreak  -->
+            <Label
+                x:Name="lineSeparator"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                BackgroundColor="#3d354145" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>

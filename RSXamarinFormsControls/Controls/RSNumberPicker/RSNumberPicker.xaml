@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSNumberPicker"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:common="clr-namespace:RSXamarinFormsControls.Common"
+    xmlns:controls="clr-namespace:RSXamarinFormsControls.Controls">
+    <ContentView.Content>
+        <StackLayout
+            x:Name="Parent"
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center">
+            <Grid WidthRequest="80">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.ColumnSpan="2">
+                    <Frame Padding="2" BorderColor="{StaticResource PrimaryColor}">
+                        <StackLayout
+                            BackgroundColor="{StaticResource Background}"
+                            HorizontalOptions="Start"
+                            Orientation="Horizontal"
+                            WidthRequest="80">
+                            <Label
+                                x:Name="lblSelectedNumber"
+                                FontSize="24"
+                                HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="End"
+                                Text="0"
+                                TextColor="{StaticResource TextColor}"
+                                VerticalOptions="FillAndExpand"
+                                VerticalTextAlignment="Center" />
+                            <controls:RSPickerWhell
+                                x:Name="rspwSelectedNumber"
+                                BackgroundColor="Red"
+                                IsVisible="false"
+                                TranslationY="0" />
+                            <Label
+                                FontFamily="MaterialIcons"
+                                FontSize="24"
+                                HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="Center"
+                                Text="{Static common:IconFont.ArrowDropDown}"
+                                TextColor="{StaticResource PrimaryColor}"
+                                VerticalOptions="FillAndExpand"
+                                VerticalTextAlignment="Start" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

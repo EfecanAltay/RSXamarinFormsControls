@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSExtendableView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:RSXamarinFormsControls.Controls"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout Spacing="0">
+            <Label
+                BackgroundColor="{StaticResource PrimaryColor}"
+                HeightRequest="1"
+                HorizontalOptions="FillAndExpand" />
+            <Grid
+                BackgroundColor="{StaticResource Background}"
+                RowSpacing="0"
+                HeightRequest="50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+                <controls:RSStackLayoutTitleItem
+                    LineSeparatorVisiable="False"
+                    RowHeight="50"
+                    TitleText="ExtendableView Title" />
+                <controls:RSExpandableButton
+                    x:Name="ebSpeciality"
+                    Grid.Column="1"
+                    WidthRequest="50" />
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Grid.GestureRecognizers>
+            </Grid>
+            <Label
+                BackgroundColor="{StaticResource PrimaryColor}"
+                HeightRequest="1"
+                HorizontalOptions="FillAndExpand" />
+            <StackLayout
+                x:Name="contentStackLayout"
+                BackgroundColor="{StaticResource BackgroundDark}"
+                Padding="10"
+                HeightRequest="50"
+                IsVisible="False"
+                VerticalOptions="Fill" />
+            <!--  LineBreak  -->
+            <Label
+                x:Name="lineSeparator"
+                HeightRequest="1"
+                IsVisible="false"
+                BackgroundColor="{StaticResource PrimaryColor}" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

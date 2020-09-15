@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSRange"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:controls="clr-namespace:RSXamarinFormsControls.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout
+            MinimumHeightRequest="80"
+            Orientation="Horizontal"
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                HeightRequest="40"
+                HorizontalOptions="CenterAndExpand"
+                Orientation="Vertical"
+                VerticalOptions="FillAndExpand"
+                WidthRequest="160">
+                <Label x:Name="lblheaderMin" Text="HeaderMin" />
+                <Frame
+                    Padding="4"
+                    BackgroundColor="White"
+                    BorderColor="#9f9d9d"
+                    HasShadow="False">
+                    <StackLayout>
+                        <controls:RSEntry
+                            x:Name="input1"
+                            Keyboard="Numeric"
+                            Placeholder=""
+                            TextChanged="Input1_TextChanged"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                HeightRequest="40"
+                HorizontalOptions="CenterAndExpand"
+                Orientation="Vertical"
+                VerticalOptions="FillAndExpand"
+                WidthRequest="160">
+                <Label x:Name="lblheaderMax" Text="HeaderMax" />
+                <Frame
+                    Padding="4"
+                    BackgroundColor="White"
+                    BorderColor="#9f9d9d"
+                    HasShadow="False">
+                    <StackLayout>
+                        <controls:RSEntry
+                            x:Name="input2"
+                            Keyboard="Numeric"
+                            Placeholder=""
+                            TextChanged="Input2_TextChanged"
+                            Unfocused="Input2_Unfocused"
+                            VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

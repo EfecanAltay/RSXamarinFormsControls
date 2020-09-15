@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:common="clr-namespace:XamarinFormsCustomViews.Common"
+             x:Class="RSXamarinFormsControls.Controls.RSGenderPicker">
+  <ContentView.Content>
+      <StackLayout HorizontalOptions="Center">
+            <Frame BackgroundColor="{StaticResource Background}" Padding="0" BorderColor="{StaticResource PrimaryColor}">
+                <StackLayout Orientation="Horizontal" WidthRequest="110" Padding="10" HeightRequest="48" >
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
+                        <Label x:Name="lblMan" TextColor="{StaticResource BackgroundDark}" HorizontalTextAlignment="Center"  FontSize="32" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" FontFamily="IonicIcons" Text="{Static common:IoniconsFont.Man}" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizerMan_Tapped"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    <BoxView WidthRequest="1" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimaryColor}"/>
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand">
+                        <Label x:Name="lblWoman" TextColor="{StaticResource BackgroundDark}" HorizontalTextAlignment="Center" FontSize="32"  VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" FontFamily="IonicIcons" Text="{Static common:IoniconsFont.Woman}" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizerWoman_Tapped"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RSXamarinFormsControls.Pages.TestPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:RSXamarinFormsControls.Controls"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:RSXamarinFormsControls.ViewModels"
+    mc:Ignorable="d">
+    <ContentPage.BindingContext>
+        <vm:TestPageViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <controls:RSExtendableView>
+                <controls:RSExtendableView.ContentLayout>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="Center"
+                                Text="Hello Xamarin !"
+                                TextColor="{StaticResource TextColor}"
+                                VerticalOptions="FillAndExpand"
+                                VerticalTextAlignment="Center" />
+                        </StackLayout>
+                    </DataTemplate>
+                </controls:RSExtendableView.ContentLayout>
+            </controls:RSExtendableView>
+            <controls:RSSelection x:Name="RSSelection" />
+            <controls:RSCounter />
+            <controls:RSGenderPicker />
+            <controls:RSPickerWhell x:Name="ViewWhell" />
+            <controls:RSNumberPicker />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

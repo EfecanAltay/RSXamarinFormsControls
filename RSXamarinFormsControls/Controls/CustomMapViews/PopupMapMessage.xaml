@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+    x:Class="RSXamarinFormsControls.CustomControls.PopupMapMessage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+    xmlns:converter="clr-namespace:RSXamarinFormsControls.Utility.Converters"
+    xmlns:local="clr-namespace:RSXamarinFormsControls.CustomControls"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    CloseWhenBackgroundIsClicked="True"
+    IsAnimationEnabled="True">
+
+    <!--  You can set an animation in the xaml file or in the csharp code behind  -->
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <pages:PopupPage.Content>
+        <Grid
+            Margin="20"
+            BackgroundColor="Transparent"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+            </Grid.RowDefinitions>
+
+            <Frame
+                Grid.Row="0"
+                Padding="0"
+                BackgroundColor="{StaticResource Background}"
+                BorderColor="{StaticResource LightGrayColor2}"
+                CornerRadius="20"
+                HasShadow="False"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="460">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="12" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="12" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image
+                        Grid.RowSpan="3"
+                        Grid.Column="1"
+                        HeightRequest="48"
+                        Source="doctor.png"
+                        VerticalOptions="Center"
+                        WidthRequest="48" />
+
+                    <Label
+                        x:Name="labMessageTitle"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        FontAttributes="Bold"
+                        FontSize="22"
+                        HorizontalOptions="Start"
+                        HorizontalTextAlignment="Start"
+                        Text="{Binding Title}"
+                        TextColor="{StaticResource DarkBlueTitle}" />
+                    <local:ScrollViewBarHide
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        Margin="0,0,0,20">
+                        <StackLayout>
+                            <Label
+                                x:Name="labMessageContent"
+                                FontSize="15"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Start"
+                                Text="{Binding Message}"
+                                TextColor="{StaticResource DarkBlueTitle}" />
+                        </StackLayout>
+                    </local:ScrollViewBarHide>
+                    <StackLayout
+                        Grid.Row="3"
+                        Grid.ColumnSpan="3"
+                        Padding="0"
+                        HorizontalOptions="EndAndExpand"
+                        Orientation="Horizontal">
+
+                        <local:CustomButton
+                            x:Name="btnPlan"
+                            BackgroundColor="{StaticResource CustomPopupBtnColor}"
+                            Clicked="Button_Clicked"
+                            CornerRadius="8"
+                            FontAttributes="Bold"
+                            FontFamily="{StaticResource Museo500}"
+                            FontSize="18"
+                            Text="{Binding Button2Text}"
+                            TextColor="White"
+                            WidthRequest="80" />
+
+                        <local:CustomButton
+                            x:Name="btnGoLocation"
+                            BackgroundColor="{StaticResource LightGrayColor2}"
+                            BorderColor="{StaticResource LightGrayColor2}"
+                            Clicked="Button_Clicked"
+                            CornerRadius="8"
+                            FontAttributes="Bold"
+                            FontFamily="{StaticResource Museo500}"
+                            FontSize="18"
+                            Text="{Binding Button1Text}"
+                            TextColor="{StaticResource DarkGray}"
+                            WidthRequest="100" />
+
+                        <Frame
+                            x:Name="btnOthers"
+                            Padding="0"
+                            BackgroundColor="{StaticResource LightGrayColor2}"
+                            CornerRadius="8"
+                            HasShadow="False">
+                            <Image Margin="10,3,10,3" Source="dots.png" />
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Button_Clicked" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </Grid>
+    </pages:PopupPage.Content>
+</pages:PopupPage>

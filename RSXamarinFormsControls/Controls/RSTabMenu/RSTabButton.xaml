@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="RSXamarinFormsControls.Controls.RSTabButton"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <Grid
+            x:Name="ContentRoot"
+            BackgroundColor="Transparent"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="11*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label
+                x:Name="lblText"
+                Grid.Row="0"
+                FontSize="17"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="Idesse"
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center" />
+            <BoxView
+                x:Name="selectLine"
+                Grid.Row="1"
+                BackgroundColor="#ff334e"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="False" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>
