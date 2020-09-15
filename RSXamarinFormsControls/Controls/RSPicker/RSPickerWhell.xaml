@@ -18,8 +18,10 @@
                         <RowDefinition Height="30" />
                     </Grid.RowDefinitions>
                     <ScrollView
-                        x:Name="scrollView"
+                        x:Name="sView"
                         Grid.RowSpan="3"
+                        CascadeInputTransparent="True"
+                        IsClippedToBounds="False"
                         Scrolled="ScrollView_Scrolled"
                         VerticalScrollBarVisibility="Never">
                         <StackLayout

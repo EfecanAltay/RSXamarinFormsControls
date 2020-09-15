@@ -12,27 +12,53 @@
         <vm:TestPageViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout Padding="10">
-            <controls:RSExtendableView>
-                <controls:RSExtendableView.ContentLayout>
-                    <DataTemplate>
-                        <StackLayout Orientation="Horizontal">
-                            <Label
-                                HorizontalOptions="FillAndExpand"
-                                HorizontalTextAlignment="Center"
-                                Text="Hello Xamarin !"
-                                TextColor="{StaticResource TextColor}"
-                                VerticalOptions="FillAndExpand"
-                                VerticalTextAlignment="Center" />
-                        </StackLayout>
-                    </DataTemplate>
-                </controls:RSExtendableView.ContentLayout>
-            </controls:RSExtendableView>
-            <controls:RSSelection x:Name="RSSelection" />
-            <controls:RSCounter />
-            <controls:RSGenderPicker />
-            <controls:RSPickerWhell x:Name="ViewWhell" />
-            <controls:RSNumberPicker />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <controls:RSExtendableView>
+                    <controls:RSExtendableView.ContentLayout>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="FillAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    Text="Hello Xamarin !"
+                                    TextColor="{StaticResource TextColor}"
+                                    VerticalOptions="FillAndExpand"
+                                    VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </controls:RSExtendableView.ContentLayout>
+                </controls:RSExtendableView>
+                <controls:RSSelection x:Name="RSSelection" />
+                <controls:RSCounter />
+                <controls:RSGenderPicker />
+                <controls:RSPickerWhell x:Name="ViewWhell" />
+                <controls:RSNumberPicker />
+                <ScrollView BackgroundColor="Red" HeightRequest="100">
+                    <StackLayout>
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                        <Label HeightRequest="150" Text="A" />
+                    </StackLayout>
+                </ScrollView>
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+                <Label HeightRequest="150" Text="A" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
