@@ -22,7 +22,7 @@
                                     HorizontalOptions="FillAndExpand"
                                     HorizontalTextAlignment="Center"
                                     Text="Hello Xamarin !"
-                                    TextColor="{StaticResource TextColor}"
+                                    TextColor="{StaticResource RSTextColor}"
                                     VerticalOptions="FillAndExpand"
                                     VerticalTextAlignment="Center" />
                             </StackLayout>

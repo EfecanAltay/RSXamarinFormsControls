@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using RSXamarinFormsControls.Resources;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace RSXamarinFormsControls.Controls
@@ -14,8 +15,8 @@ namespace RSXamarinFormsControls.Controls
         public RSGenderPicker()
         {
             InitializeComponent();
-            defaultColor = (Color)Application.Current.Resources["BackgroundDark"];
-            selectionColor = (Color)Application.Current.Resources["PrimaryColor"];
+            defaultColor = (Color)Application.Current.Resources["RSBackgroundDark"];
+            selectionColor = (Color)Application.Current.Resources["RSPrimaryColor"];
         }
 
         private void TapGestureRecognizerMan_Tapped(object sender, System.EventArgs e)

@@ -16,9 +16,9 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <StackLayout Grid.ColumnSpan="2">
-                    <Frame Padding="2" BorderColor="{StaticResource PrimaryColor}">
+                    <Frame Padding="2" BorderColor="{StaticResource RSPrimaryColor}">
                         <StackLayout
-                            BackgroundColor="{StaticResource Background}"
+                            BackgroundColor="{StaticResource RSBackground}"
                             HorizontalOptions="Start"
                             Orientation="Horizontal"
                             WidthRequest="80">
@@ -28,7 +28,7 @@
                                 HorizontalOptions="FillAndExpand"
                                 HorizontalTextAlignment="End"
                                 Text="0"
-                                TextColor="{StaticResource TextColor}"
+                                TextColor="{StaticResource RSTextColor}"
                                 VerticalOptions="FillAndExpand"
                                 VerticalTextAlignment="Center" />
                             <controls:RSPickerWhell
@@ -42,7 +42,7 @@
                                 HorizontalOptions="FillAndExpand"
                                 HorizontalTextAlignment="Center"
                                 Text="{Static common:IconFont.ArrowDropDown}"
-                                TextColor="{StaticResource PrimaryColor}"
+                                TextColor="{StaticResource RSPrimaryColor}"
                                 VerticalOptions="FillAndExpand"
                                 VerticalTextAlignment="Start" />
                         </StackLayout>

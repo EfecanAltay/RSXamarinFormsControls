@@ -10,11 +10,11 @@
     <ContentView.Content>
         <StackLayout Spacing="0">
             <Label
-                BackgroundColor="{StaticResource PrimaryColor}"
+                BackgroundColor="{StaticResource RSPrimaryColor}"
                 HeightRequest="1"
                 HorizontalOptions="FillAndExpand" />
             <Grid
-                BackgroundColor="{StaticResource Background}"
+                BackgroundColor="{StaticResource RSBackground}"
                 RowSpacing="0"
                 HeightRequest="50">
                 <Grid.RowDefinitions>
@@ -37,12 +37,12 @@
                 </Grid.GestureRecognizers>
             </Grid>
             <Label
-                BackgroundColor="{StaticResource PrimaryColor}"
+                BackgroundColor="{StaticResource RSPrimaryColor}"
                 HeightRequest="1"
                 HorizontalOptions="FillAndExpand" />
             <StackLayout
                 x:Name="contentStackLayout"
-                BackgroundColor="{StaticResource BackgroundDark}"
+                BackgroundColor="{StaticResource RSBackgroundDark}"
                 Padding="10"
                 HeightRequest="50"
                 IsVisible="False"
@@ -52,7 +52,7 @@
                 x:Name="lineSeparator"
                 HeightRequest="1"
                 IsVisible="false"
-                BackgroundColor="{StaticResource PrimaryColor}" />
+                BackgroundColor="{StaticResource RSPrimaryColor}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

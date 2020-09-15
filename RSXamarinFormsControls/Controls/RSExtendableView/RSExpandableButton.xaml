@@ -15,12 +15,12 @@
             MinimumWidthRequest="40">
             <Label
                 x:Name="expandableImage"
+                FontFamily="MaterialIcons"
                 FontSize="24"
                 HorizontalOptions="FillAndExpand"
                 HorizontalTextAlignment="Center"
-                FontFamily="MaterialIcons"
                 Text="{x:Static common:IconFont.ArrowDropDown}"
-                TextColor="{StaticResource PrimaryColor}"
+                TextColor="{StaticResource RSPrimaryColor}"
                 VerticalOptions="FillAndExpand"
                 VerticalTextAlignment="Center" />
         </StackLayout>

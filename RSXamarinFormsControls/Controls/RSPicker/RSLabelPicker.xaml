@@ -12,8 +12,8 @@
         <StackLayout HorizontalOptions="Center" VerticalOptions="Fill">
             <Frame
                 Padding="5"
-                BackgroundColor="{StaticResource Background}"
-                BorderColor="{StaticResource PrimaryColor}"
+                BackgroundColor="{StaticResource RSBackground}"
+                BorderColor="{StaticResource RSPrimaryColor}"
                 HeightRequest="44"
                 VerticalOptions="Fill">
                 <StackLayout
@@ -29,7 +29,7 @@
                         FontSize="28"
                         HorizontalTextAlignment="Center"
                         Text="-"
-                        TextColor="{StaticResource PrimaryColor}"
+                        TextColor="{StaticResource RSPrimaryColor}"
                         WidthRequest="34">
                         <Label.Effects>
                             <effect:RSTouchEffect
@@ -46,8 +46,8 @@
                             FontAttributes="Bold"
                             FontSize="22"
                             HorizontalTextAlignment="Center"
-                            TextColor="{StaticResource TextColor}"
-                            BackgroundColor="{StaticResource BackgroundDark}"
+                            TextColor="{StaticResource RSTextColor}"
+                            BackgroundColor="{StaticResource RSBackgroundDark}"
                             VerticalOptions="Center">
                             <controls:RSEntry.HeightRequest>
                                 <OnPlatform x:TypeArguments="x:Double">
@@ -72,7 +72,7 @@
                         FontSize="28"
                         HorizontalTextAlignment="Center"
                         Text="+"
-                        TextColor="{StaticResource PrimaryColor}"
+                        TextColor="{StaticResource RSPrimaryColor}"
                         WidthRequest="34">
                         <Label.Effects>
                             <effect:RSTouchEffect

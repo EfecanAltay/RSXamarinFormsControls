@@ -15,8 +15,8 @@
             Orientation="Horizontal">
             <Frame
                 Padding="4"
-                BackgroundColor="{StaticResource Background}"
-                BorderColor="{StaticResource BackgroundDark}"
+                BackgroundColor="{StaticResource RSBackground}"
+                BorderColor="{StaticResource RSBackgroundDark}"
                 HasShadow="False"
                 HeightRequest="25"
                 HorizontalOptions="Center"
@@ -31,7 +31,7 @@
                     IsVisible="False"
                     FontSize="24"
                     Text="{x:Static common:IconFont.Done}"
-                    TextColor="{StaticResource PrimaryColor}"
+                    TextColor="{StaticResource RSPrimaryColor}"
                     FontFamily="MaterialIcons"
                     VerticalOptions="Center" />
             </Frame>
@@ -39,7 +39,7 @@
                 x:Name="lblText"
                 FontSize="17"
                 Text="?"
-                TextColor="{StaticResource TextColor}"
+                TextColor="{StaticResource RSTextColor}"
                 VerticalOptions="Center" />
         </StackLayout>
     </ContentView.Content>

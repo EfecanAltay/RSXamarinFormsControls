@@ -5,17 +5,17 @@
              x:Class="RSXamarinFormsControls.Controls.RSGenderPicker">
   <ContentView.Content>
       <StackLayout HorizontalOptions="Center">
-            <Frame BackgroundColor="{StaticResource Background}" Padding="0" BorderColor="{StaticResource PrimaryColor}">
+            <Frame BackgroundColor="{StaticResource RSBackground}" Padding="0" BorderColor="{StaticResource RSPrimaryColor}">
                 <StackLayout Orientation="Horizontal" WidthRequest="110" Padding="10" HeightRequest="48" >
                     <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
-                        <Label x:Name="lblMan" TextColor="{StaticResource BackgroundDark}" HorizontalTextAlignment="Center"  FontSize="32" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" FontFamily="IonicIcons" Text="{Static common:IoniconsFont.Man}" />
+                        <Label x:Name="lblMan" TextColor="{StaticResource RSBackgroundDark}" HorizontalTextAlignment="Center"  FontSize="32" VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" FontFamily="IonicIcons" Text="{Static common:IoniconsFont.Man}" />
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizerMan_Tapped"/>
                         </StackLayout.GestureRecognizers>
                     </StackLayout>
-                    <BoxView WidthRequest="1" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource PrimaryColor}"/>
+                    <BoxView WidthRequest="1" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource RSPrimaryColor}"/>
                     <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand">
-                        <Label x:Name="lblWoman" TextColor="{StaticResource BackgroundDark}" HorizontalTextAlignment="Center" FontSize="32"  VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" FontFamily="IonicIcons" Text="{Static common:IoniconsFont.Woman}" />
+                        <Label x:Name="lblWoman" TextColor="{StaticResource RSBackgroundDark}" HorizontalTextAlignment="Center" FontSize="32"  VerticalTextAlignment="Center" VerticalOptions="FillAndExpand" FontFamily="IonicIcons" Text="{Static common:IoniconsFont.Woman}" />
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizerWoman_Tapped"/>
                         </StackLayout.GestureRecognizers>

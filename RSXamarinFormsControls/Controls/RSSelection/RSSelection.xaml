@@ -3,8 +3,8 @@
     x:Class="RSXamarinFormsControls.Controls.RSSelection"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:controls="clr-namespace:RSXamarinFormsControls.Controls"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <ContentView.Content>

@@ -24,7 +24,7 @@
                 Margin="20,0,0,0"
                 FontAttributes="Bold"
                 FontSize="18"
-                TextColor="{StaticResource TextColor}"
+                TextColor="{StaticResource RSTextColor}"
                 VerticalOptions="Center" />
 
             <!--  LineBreak  -->

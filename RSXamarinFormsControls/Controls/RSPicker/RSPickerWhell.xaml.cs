@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -141,7 +140,7 @@ namespace RSXamarinFormsControls.Controls
             {
                 Text = text,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                TextColor = (Color)Application.Current.Resources["TextColor"],
+                TextColor = (Color)Application.Current.Resources["RSTextColor"],
                 HorizontalTextAlignment = TextAlignment.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 VerticalTextAlignment = TextAlignment.Center

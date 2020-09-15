@@ -4,9 +4,9 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Color x:Key="TextColor">#7B7B7B</Color>
-    <Color x:Key="Background">#FFFFFF</Color>
-    <Color x:Key="BackgroundDark">#E5E5E5</Color>
-    <Color x:Key="PrimaryColor">#55B7A3</Color>
+    <Color x:Key="RSTextColor">#7B7B7B</Color>
+    <Color x:Key="RSBackground">#FFFFFF</Color>
+    <Color x:Key="RSBackgroundDark">#E5E5E5</Color>
+    <Color x:Key="RSPrimaryColor">#55B7A3</Color>
 
 </ResourceDictionary>

@@ -35,7 +35,7 @@
                     </ScrollView>
                     <BoxView
                         Grid.Row="1"
-                        BackgroundColor="{StaticResource PrimaryColor}"
+                        BackgroundColor="{StaticResource RSPrimaryColor}"
                         InputTransparent="True"
                         IsVisible="false"
                         Opacity=".1" />
