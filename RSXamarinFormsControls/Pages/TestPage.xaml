@@ -14,6 +14,11 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10">
+                <Label
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="RSSelection"
+                    TextColor="{StaticResource RSBackgroundDark}" />
                 <controls:RSExtendableView>
                     <controls:RSExtendableView.ContentLayout>
                         <DataTemplate>
@@ -21,7 +26,7 @@
                                 <Label
                                     HorizontalOptions="FillAndExpand"
                                     HorizontalTextAlignment="Center"
-                                    Text="Hello Xamarin !"
+                                    Text="Hello There ! I'm ContentLayout, You can give what you want view !"
                                     TextColor="{StaticResource RSTextColor}"
                                     VerticalOptions="FillAndExpand"
                                     VerticalTextAlignment="Center" />
@@ -29,35 +34,36 @@
                         </DataTemplate>
                     </controls:RSExtendableView.ContentLayout>
                 </controls:RSExtendableView>
+                <Label
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="RSSelection"
+                    TextColor="{StaticResource RSBackgroundDark}" />
                 <controls:RSSelection x:Name="RSSelection" />
+                <Label
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="RSCounter"
+                    TextColor="{StaticResource RSBackgroundDark}" />
                 <controls:RSCounter />
+                <Label
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="RSGenderPicker"
+                    TextColor="{StaticResource RSBackgroundDark}" />
                 <controls:RSGenderPicker />
+                <Label
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="RSPickerWhell"
+                    TextColor="{StaticResource RSBackgroundDark}" />
                 <controls:RSPickerWhell x:Name="ViewWhell" />
+                <Label
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="RSNumberPicker"
+                    TextColor="{StaticResource RSBackgroundDark}" />
                 <controls:RSNumberPicker />
-                <ScrollView BackgroundColor="Red" HeightRequest="100">
-                    <StackLayout>
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                        <Label HeightRequest="150" Text="A" />
-                    </StackLayout>
-                </ScrollView>
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
-                <Label HeightRequest="150" Text="A" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
